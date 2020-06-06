@@ -35,6 +35,11 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 ### The Idea: Solution
 
+We can automate the queue into virtual one so that the patient does not have to stay anxious for his/her turn for long. The Patient can see his token number on his/her phone which gets updated on real time. Once his/her turn come, he also gets push notifications that his turn has come. This saves his time , he/she can avoid waiting in long queue, and he/she can maintain safe distance from other patients who are there. Once his test is done , and we found him negative for Covid, we will issue certificate to that patient, which the patient can see on his phone, download that, and use that as a pass during travel
+
+Apart from the Covid-19 patients, it can also help the other category of health departments, which will facilitate patients to save time and stay safe while maintaining safe social distancing
+
+
  1. Multiple categories: one category will be covid-19 
 
  2. Inside that the user has to answer certain questions 
@@ -87,15 +92,22 @@ We can automate the queue into virtual one so that the patient does not have to 
 2. Search/Select for available 
      
      a. View All Health Category
+
      b. Search available doctors, health center and labs for a perticular slot and department
+
      c. View My requests for queue
+
      d. View number of appointments already taken for a particular time slot
+
 
 3. Request and track
     
       a. Request for Queue
+
       b. Delete your request
+
       c. Get real-time notification when queues are updated 
+
 
 4. The android app uses push notification service and FCM service - OTP base Authentication
 
@@ -153,12 +165,13 @@ install Android studio
 import project
 ```
 
-  Download ![WellnessQ.apk](https://github.com/supriyawin/Binary-Nova/blob/master/WellnessQ%20APK/app-debug.apk) in your android mobile phone and run the application.
-
-
 
 ## Running the tests
-[Swagger UI](http://wellnessq.mybluemix.net/swagger-ui.html)
+
+Download the WellnessQ App ![WellnessQ.apk](https://github.com/supriyawin/Binary-Nova/blob/master/WellnessQ%20APK/app-debug.apk) in your android mobile phone and run the application.
+ 
+View and test REST APIs associated [Swagger UI](http://wellnessq.mybluemix.net/swagger-ui.html)
+
 
 ### manifest.yml file
 
