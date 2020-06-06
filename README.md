@@ -99,7 +99,7 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 8. Google Maps -Connected to Android Application
 
-9. Retrofit used for makinhg REST API call
+9. Retrofit used for making REST API call
 
 
 ## Project roadmap
@@ -108,7 +108,7 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on IBM Cloud foundry.
 
 ### Prerequisites
 
@@ -194,11 +194,12 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 * [Java STS](https://spring.io/tools) - The IDE used for backed development
 * [Maven](https://maven.apache.org/) - Dependency management
 * [Android Studio](https://developer.android.com/studio) - The IDE used for andriod development
-* [swagger ui](https://swagger.io/) - Enabled -To view REST APIs
-* [firebase phone authentication](https://firebase.google.com/docs/auth/android/phone-auth) - OTP based phone Authentication
+* [Swagger ui](https://swagger.io/) - Enabled -To view REST APIs
+* [Firebase phone authentication](https://firebase.google.com/docs/auth/android/phone-auth) - OTP based phone Authentication
+* [Google Map](https://developers.google.com/maps/documentation/android-sdk/start) - allows us to integrate google maps in Android Application
 
 ## Authors
 
-* **Ananya Stitipragyan** - *Java Backend, MongoDB and Document work*
-* **Supriya Sinha** - *Android, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment, MongoDB* 
+* **Ananya Stitipragyan** - *Java Spring-boot Backend, MongoDB and Document work*
+* **Supriya Sinha** - *Android, Spring-boot, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment, MongoDB* 
 
