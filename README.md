@@ -145,7 +145,7 @@ install Android studio
 import project
 ```
 
-  Download ![WellnessQ.apk](wellnesQ.apk) in your android mobile phone and run the application.
+  Download ![WellnessQ.apk](https://github.com/supriyawin/Binary-Nova/blob/master/WellnessQ%20APK/app-debug.apk) in your android mobile phone and run the application.
 
 
 
@@ -200,5 +200,5 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 ## Authors
 
 * **Ananya Stitipragyan** - *Java Backend, MongoDB and Document work*
-* **Supriya Sinha** - *Android, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment* 
+* **Supriya Sinha** - *Android, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment, MongoDB* 
 
