@@ -10,11 +10,11 @@ Automation tool that virtualizes the waiting Queue At medical centers, Labs and 
 1. [About Existing Medical Procedure](#About-Existing-Medical-Procedure)
 1. [Demo video](#demo-video)
 1. [The architecture](#the-architecture)
-1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
-1. [Getting started](#getting-started)
+1. [Getting started with WellnessQ](#getting-started)
 1. [Running the tests](#running-the-WellnessQ-app)
 1. [Live demo](#live-demo)
+1. [Future works](#Future works)
 1. [Built with](#built-with)
 1. [Authors](#authors)
 
@@ -35,7 +35,7 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 ### The Idea: Solution
 
-We can automate the queue into virtual one so that the patient does not have to stay anxious for his/her turn for long. The Patient can see his token number on his/her phone which gets updated on real time. Once his/her turn come, he also gets push notifications that his turn has come. This saves his time , he/she can avoid waiting in long queue, and he/she can maintain safe distance from other patients who are there. Once his test is done , and we found him negative for Covid, we will issue certificate to that patient, which the patient can see on his phone, download that, and use that as a pass during travel
+WellneQ Android application automates queues into virtual queue so that the patient does not have to stay anxious for his/her turn for long. The Patient can see his token number on his/her phone which gets updated on real time. Once his/her turn come, he also gets push notifications that his turn has come. This saves his time , he/she can avoid waiting in long queue, and he/she can maintain safe distance from other patients who are there. Once his test is done , and we found him negative for Covid, we will issue certificate to that patient, which the patient can see on his phone, download that, and use that as a pass during travel
 
 Apart from the Covid-19 patients, it can also help the other category of health departments, which will facilitate patients to save time and stay safe while maintaining safe social distancing
 
@@ -62,7 +62,7 @@ Apart from the Covid-19 patients, it can also help the other category of health 
 
 ## Demo video
 
-[![DemoCover](demo.jpg)](https://youtubeLink)
+[![DemoCover](demo.jpg)](https://youtu.be/bhxssywl8yA)
 
 ## The architecture
 
@@ -126,7 +126,7 @@ Apart from the Covid-19 patients, it can also help the other category of health 
 
 ![Roadmap](roadmap.jpg)
 
-## Getting started
+## Getting started with WellnessQ
 
 The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on IBM Cloud foundry.
 
@@ -208,6 +208,10 @@ cf push
 ## Live demo
 
 You can find a running system to test at [wellnessq.mybluemix.net](http://wellnessq.mybluemix.net/)
+
+## Future works
+
+
 
 ## Built with
 
