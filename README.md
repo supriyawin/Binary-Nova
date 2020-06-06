@@ -1,41 +1,59 @@
-# Submission name
+# WellnessQ
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://code-and-response.github.io/Project-Sample/)
+Automation tool that virtualizes the waiting Queue At medical centers, Labs and  hospital. Specifically during the hour of crisis like Covid-19 pandemic.
 
-A basic GitHub repository example for Call for Code submissions and those projects that join the Code and Response initiative. Not all sections or files are required. You can make this as simple or as in-depth as you need.
 
 *Read this in other languages: [English](README.md), [한국어](README.ko.md), [português](README.pt_br.md).*
 
 ## Contents
 
-1. [Short description](#short-description)
+1. [About Existing Medical Procedure](#About-Existing-Medical-Procedure)
 1. [Demo video](#demo-video)
 1. [The architecture](#the-architecture)
 1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
-1. [Running the tests](#running-the-tests)
+1. [Running the tests](#running-the-WellnessQ-app)
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
-1. [Contributing](#contributing)
-1. [Versioning](#versioning)
 1. [Authors](#authors)
-1. [License](#license)
-1. [Acknowledgments](#acknowledgments)
 
-## Short description
 
-### What's the problem?
+## About Existing Medical Procedure
 
-Part of the World Health Organization's guidance on limiting further spread of COVID-19 is to practice social distancing. As a result, schools in most affected areas are taking precautionary measures by closing their facilities. With school-aged children at home for an indeterminate amount of time,  keeping them engaged, entertained, and on top of their education is important.
+The existing PCR test is registered through a self reporting form for COVID-19 Sample collection.
+After submission of the form the mobile number provided in the form gets the OTP , id, Sample ID as a text message. 
+They also get provided a link to download ICMR Specimen Referral Form For Covid-19(SARS-CoV2).At Medical centers and collection centers they do not have the real-time tracking application for queue status while waiting at the quarantined place for their turn to appear.
+
+### Problem Statement
+
+The Medical centers and collection centers do not have the real-time tracking application for queue status while waiting at the quarantined place for their turn to appear.
 
 ### How can technology help?
 
-Schools and teachers can continue to engage with their students through virtual classrooms, and even create interactive spaces for classes. As parents face a new situation where they may need to homeschool their children, finding appropriate online resources is important as well.
+We can automate the queue into virtual one so that the patient does not have to stay anxious for its turn for long. It can track the people those are there before and stay alert about its turn. we as well as send the certificate of people who tested negative. Apart from the Covid-19 patients, it can also help the other category of health  department. which will facilitate patients to stay safe while maintaining safe social distancing
 
-### The idea
+### The Idea: Solution
 
-It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and Watson Services, will enable educators to more easily make content available for their students.
+ 1. Multiple categories: one category will be covid-19 
+
+ 2. Inside that the user has to answer certain questions 
+
+ 3. Recommend the user with the list of test/Health facility centers nearer
+
+ 4. Option to select an appointment slot time
+
+ 5. In that slot, option to view number of people in Queue  
+              
+ 6. Request for queue Token
+ 
+ 7. Option track users turn 
+
+ 8. Responsive notification alert 
+
+ 9. Downloading certificate for Tested negative reports 
+
+
 
 ## Demo video
 
@@ -43,20 +61,49 @@ It's imperative that learning and creating can continue when educational institu
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/arch.png)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. Login 
 
-## Long description
+    a. Generate OTP
+    b. Login using OTP
+    c. Select type 
+         c1. Doctor
+         c2. Patient
+    d. Edit profile
+    e. View Notification
+    f. Logout
 
-[More detail is available here](DESCRIPTION.md)
+
+2. Search/Select for available 
+     
+     a. View All Health Category
+     b. Search available doctors, health center and labs for a perticular slot and department
+     c. View My requests for queue
+     d. View number of appointments already taken for a particular time slot
+
+3. Request and track
+    
+      a. Request for Queue
+      b. Delete your request
+      c. Get real-time notification when queues are updated 
+
+4. The android app uses push notification service and FCM service - OTP base Authentication
+
+5. The android app makes REST API calls to spring boot backend to get records of users
+
+6. The Spring boot backend is connected to MongoDB in cloud
+
+7. The Software product WellnessQ is deployed in IBM cloud foundry Application
+
+8. Google Maps -Connected to Android Application
+
+9. Retrofit used for makinhg REST API call
+
 
 ## Project roadmap
 
-![Roadmap](roadmap.jpg)
+![Roadmap](roadmap1.jpg)
 
 ## Getting started
 
@@ -67,89 +114,88 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
+Spring Tool Suite 4
+Android Studio
+mongoDB
+IBM cloud foundry Application
+FCM Phone Authentication
+IBM cloud push notification service
+Google Map
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be, for example
+1. Spring-boot backend set up
 
 ```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
+Install java eclipse 
+Import existing maven project
+maven install
+maven build and set goal to "spring-boot:run"
+Application is now running on tomcat server
+Server running at http://localhost:8080/
 ```
 
-And repeat
+2. Android Native Set up
 
 ```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
+install Android studio
+import project
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
+[Swagger UI](http://wellnessq.mybluemix.net/swagger-ui.html)
 
-Explain how to run the automated tests for this system
+### manifest.yml file
 
-### Break down into end to end tests
-
-Explain what these tests test and why, if you were using something like `mocha` for instnance
+yml file used for deployment
 
 ```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
+applications:
+- instances: 1
+  timeout: <ms>
+  name: <name>
+  buildpack: java_buildpack
+  path: ./target/<jarfilename>.jar
+  disk_quota: 1G
+  memory: 512MB
+  domain: mybluemix.net
+  host: <hostname>
+  env:
+    JAVA_OPTS: '-XX:ReservedCodeCacheSize=32M -XX:MaxDirectMemorySize=32M'
+    JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {stack_threads: 30}]'
 ```
 
-### And coding style tests
+### And Cloud foundry application deployment
 
-Explain what these tests test and why, if you chose `eslint` for example
+[how to deploy your application to cloud fooundry](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
+Keep your deployable jar and manifest.yml file in the same folder and open cammand prompt from that file location. Run following two commands to deploy your application.
 
 ```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
+cf login --sso
+cf push
 ```
 
 ## Live demo
 
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
+You can find a running system to test at [wellnessq.mybluemix.net](http://wellnessq.mybluemix.net/)
 
 ## Built with
 
-* [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-* [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
-* [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [IBM Cloudfoundry](https://cloud.ibm.com/catalog?search=cloudant#search_results) - Application deployed in IBM Cloud foundry Application
+* [IBM Push Notifications](https://cloud.ibm.com/catalog/services/push-notifications) - Ability to personalize and send notifications
+* [MongoDB Atlas](https://www.mongodb.com/world?tck=cloud_login) - The NoSQL database used
+* [Java eclipse](https://www.eclipse.org/downloads/packages/installerhttp://www.dropwizard.io/1.0.2/docs/) - The IDE used for backed development
 * [Maven](https://maven.apache.org/) - Dependency management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+* [Android Studio](https://developer.android.com/studio) - The IDE used for andriod development
+* [swagger ui](https://swagger.io/) - Enabled -To view REST APIs
+* [firebase phone authentication](https://firebase.google.com/docs/auth/android/phone-auth) - OTP based phone Authentication
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Ananya Stitipragyan** - *Java Backend, MongoDB and Document work*
+* **Supriya Sinha** - *Android, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment* 
 
-See also the list of [contributors](https://github.com/Code-and-Response/Project-Sample/graphs/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Based on [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
