@@ -145,7 +145,9 @@ install Android studio
 import project
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+  Download ![WellnessQ.apk](wellnesQ.apk) in your android mobile phone and run the application.
+
+
 
 ## Running the tests
 [Swagger UI](http://wellnessq.mybluemix.net/swagger-ui.html)
@@ -189,7 +191,7 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 * [IBM Cloudfoundry](https://cloud.ibm.com/catalog?search=cloudant#search_results) - Application deployed in IBM Cloud foundry Application
 * [IBM Push Notifications](https://cloud.ibm.com/catalog/services/push-notifications) - Ability to personalize and send notifications
 * [MongoDB Atlas](https://www.mongodb.com/world?tck=cloud_login) - The NoSQL database used
-* [Java eclipse](https://www.eclipse.org/downloads/packages/installerhttp://www.dropwizard.io/1.0.2/docs/) - The IDE used for backed development
+* [Java STS](https://spring.io/tools) - The IDE used for backed development
 * [Maven](https://maven.apache.org/) - Dependency management
 * [Android Studio](https://developer.android.com/studio) - The IDE used for andriod development
 * [swagger ui](https://swagger.io/) - Enabled -To view REST APIs
