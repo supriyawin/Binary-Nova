@@ -62,7 +62,7 @@ We can automate the queue into virtual one so that the patient does not have to 
 ## The architecture
 
 
-![Architacture](arch.jpg)
+![Architecture](arch.jpg)
 
 1. Login 
 
