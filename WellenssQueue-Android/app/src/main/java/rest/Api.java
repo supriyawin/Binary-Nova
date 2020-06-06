@@ -14,9 +14,9 @@ import retrofit2.http.Path;
 
 public interface Api {
 
-    String BASE_URL = "http://192.168.43.197:8080/";
+  //  String BASE_URL = "http://192.168.43.197:8080/";
     //http://100.107.112.54:1010/
-   // String BASE_URL = "http://wellnessq.mybluemix.net/";
+    String BASE_URL = "http://wellnessq.mybluemix.net/";
 
     @GET("doctor/getavailabledoctors/{category}/{slot}")
     Call<List<Doctor>> getAvailableDocs(@Path("category") String category, @Path("slot") String slot);
