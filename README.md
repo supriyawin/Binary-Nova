@@ -3,7 +3,7 @@
 Automation tool that virtualizes the waiting Queue At medical centers, Labs and  hospital. Specifically during the hour of crisis like Covid-19 pandemic.
 
 
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [português](README.pt_br.md).*
+
 
 ## Contents
 
@@ -223,6 +223,6 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 
 ## Authors
 
-* **Ananya Stitipragyan** - *Java Spring-boot Backend, MongoDB and Document work*
+* **Ananya Stitipragyan** - *Java Spring-boot Backend, MongoDB, Demo Video and Document work*
 * **Supriya Sinha** - *Android, Spring-boot, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment, MongoDB* 
 
