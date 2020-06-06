@@ -211,6 +211,14 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 
 ## Future works
 
+1. WellnessQ  Extended feature will recommend how much time you need to wait depending on the duration of visit and distance from user location to the health center
+
+2. Another feature to this application is collection of test reports as a certificate of confirmation  after every lab testso that Patient won’t have to wait for lab results 
+
+   'WellnessQ Will be useful even after pandemic'
+
+3. We can also customized this virtual Queue application. This solution is useful in every industrial sector where the supply of services is limited as per the demand of  getting the services
+
 
 
 ## Built with
