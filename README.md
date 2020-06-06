@@ -67,13 +67,21 @@ We can automate the queue into virtual one so that the patient does not have to 
 1. Login 
 
     a. Generate OTP
+
     b. Login using OTP
+
     c. Select type 
+
          c1. Doctor
+
          c2. Patient
+
     d. Edit profile
+
     e. View Notification
+
     f. Logout
+
 
 
 2. Search/Select for available 
@@ -175,6 +183,8 @@ applications:
 ### And Cloud foundry application deployment
 
 [how to deploy your application to cloud fooundry](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
+
+
 Keep your deployable jar and manifest.yml file in the same folder and open cammand prompt from that file location. Run following two commands to deploy your application.
 
 ```bash
