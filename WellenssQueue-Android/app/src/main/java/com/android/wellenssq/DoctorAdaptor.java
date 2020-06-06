@@ -78,8 +78,6 @@ public class DoctorAdaptor  extends RecyclerView.Adapter<DoctorAdaptor.MyViewHol
                 intent.putExtra("dname",  mDataset.get(position).getName());
                 intent.putExtra("docPhone", mDataset.get(position).getPhoneNumber());
                 intent.putExtra("category", mDataset.get(position).getCategory());
-                intent.putExtra("latitude",  mDataset.get(position).getLattitude());
-                intent.putExtra("longitude", mDataset.get(position).getLongitude());
                 intent.putExtra("timeslot", timeSlot);
                 intent.putExtra("pname", pName);
                 intent.putExtra("patPhone", patPhone);

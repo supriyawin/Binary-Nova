@@ -26,7 +26,14 @@ public class DoctorService {
 	PatientRepo repo;
 
 	public Doctor saveDoctor(Doctor p) {
-		return prepo.save(p);
+		
+		Doctor d= prepo.findByPhoneNumber(p.getPhoneNumber());
+		if(d==null)
+		{
+		    return prepo.save(p);
+		}
+		return p;
+		
 	}
 
 	public List<Doctor> getAllDoctor() {

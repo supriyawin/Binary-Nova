@@ -30,6 +30,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import Model.Doctor;
@@ -124,6 +125,39 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
                 Log.d(TAG, "=================>code verified" );
+                Toast.makeText(getApplicationContext(),"You are already logged in. No Need for OTP ",Toast.LENGTH_LONG).show();
+                EditText name= findViewById(R.id.txtloginName);
+
+                Intent intent;
+                if(doc.isChecked()) {
+                    Doctor doc= new Doctor();
+                    doc.setPhoneNumber(etPhoneNumber.getText().toString());
+                    doc.setName(name.getText().toString());
+                    doc.setQueueCapacity(50);
+                    doc.setCategory("Covid");
+                    HashMap<String,Integer> hm= new HashMap<String,Integer>();
+                    hm.put("8-10 AM",0);
+                    hm.put("4-6 PM",0);
+                    doc.setTimeslotMap(hm);
+
+                    intent = new Intent(getApplicationContext(), DoctoryActivity.class);
+                    intent.putExtra("name",name.getText().toString() );
+                    intent.putExtra("phone",  etPhoneNumber.getText().toString());
+                    startActivity(intent);saveDoctor( doc);
+
+                }
+                else
+                {
+                    Patient patient= new Patient();
+                    patient.setName(name.getText().toString());
+                    patient.setPhoneNumber(etPhoneNumber.getText().toString());
+                    savePatient(patient);
+
+
+                }
+
+
+
             }
 
             @Override
@@ -155,8 +189,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //verifySignInCode();
-                EditText name= findViewById(R.id.txtloginName);
+                verifySignInCode();
+             /*   EditText name= findViewById(R.id.txtloginName);
                 Intent intent;
                 if(doc.isChecked()) {
                     Doctor doc= new Doctor();
@@ -183,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+          */
 
             }
         });
@@ -324,12 +358,17 @@ public class MainActivity extends AppCompatActivity {
                                 doc.setPhoneNumber(etPhoneNumber.getText().toString());
                                 doc.setName(name.getText().toString());
                                 doc.setQueueCapacity(50);
+                                doc.setCategory("Covid");
+                                HashMap<String,Integer> hm= new HashMap<String,Integer>();
+                                hm.put("8-10 AM",0);
+                                hm.put("4-6 PM",0);
+                                doc.setTimeslotMap(hm);
 
-                               intent = new Intent(getApplicationContext(), DoctoryActivity.class);
+                                intent = new Intent(getApplicationContext(), DoctoryActivity.class);
                                 intent.putExtra("name",name.getText().toString() );
                                 intent.putExtra("phone",  etPhoneNumber.getText().toString());
                                 startActivity(intent);
-                             //   saveDoctor( doc);
+                                saveDoctor( doc);
 
                             }
                             else
@@ -380,6 +419,7 @@ public class MainActivity extends AppCompatActivity {
     public void onStop(){
         super.onStop();
         if (mAuthListener != null) {
+            auth.signOut();
             auth.removeAuthStateListener(mAuthListener);
 
         }

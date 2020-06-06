@@ -3,6 +3,7 @@ package Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class Doctor {
@@ -22,9 +23,9 @@ public class Doctor {
     @Expose
     private String longitude;
 
-    @SerializedName("timeslot")
+    @SerializedName("timeslotMap")
     @Expose
-    private String timeslot;
+    private HashMap<String,Integer> timeslotMap;
 
     @SerializedName("queueToken")
     @Expose
@@ -78,12 +79,12 @@ public class Doctor {
         this.longitude = longitude;
     }
 
-    public String getTimeslot() {
-        return timeslot;
+    public HashMap<String, Integer> getTimeslotMap() {
+        return timeslotMap;
     }
 
-    public void setTimeslot(String timeslot) {
-        this.timeslot = timeslot;
+    public void setTimeslotMap(HashMap<String, Integer> timeslotMap) {
+        this.timeslotMap = timeslotMap;
     }
 
     public List<Integer> getQueueToken() {

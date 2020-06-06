@@ -37,7 +37,8 @@ public class MedicalController {
 
 	@PostMapping("/saveDoctor")
 	public Doctor saveDoctor(@RequestBody Doctor d) {
-		log.info("saving doctor/medical center");
+		log.info("=============>saving doctor/medical center");
+		log.info("=============>saving doctor/medical center"+d.getTimeslotMap());
 		return doctorservice.saveDoctor(d);
 
 	}

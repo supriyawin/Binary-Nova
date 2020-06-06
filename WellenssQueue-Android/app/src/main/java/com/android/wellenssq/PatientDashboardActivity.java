@@ -54,8 +54,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         dname=bundle.get("dname").toString();
         pname=bundle.get("pname").toString();
         category=bundle.get("category").toString();
-        latitude=bundle.get("latitude").toString();
-        longitude=bundle.get("longitude").toString();
+
         timeSlot=bundle.get("timeslot").toString();
         docphone= bundle.getString("docPhone");
         patPhone= bundle.getString("patPhone");
