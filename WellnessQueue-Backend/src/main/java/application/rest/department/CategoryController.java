@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import io.swagger.annotations.ApiModel;
 import lombok.extern.slf4j.Slf4j;
 
+@ApiModel(description="Apis Related to Medical Category")
 @Slf4j
 @RestController
 @RequestMapping("/category")

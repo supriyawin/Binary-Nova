@@ -15,10 +15,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import application.rest.doctor.Doctor;
+import io.swagger.annotations.ApiModel;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-
+@ApiModel(description="Apis Related to Patients")
 @RestController
 @RequestMapping("/patient")
 public class PatientController {
