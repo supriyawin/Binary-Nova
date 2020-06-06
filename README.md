@@ -57,11 +57,12 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 ## Demo video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[![DemoCover](demo.jpg)](https://youtubeLink)
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/arch.png)
+
+![Architacture](arch.jpg)
 
 1. Login 
 
@@ -103,7 +104,7 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 ## Project roadmap
 
-![Roadmap](roadmap1.jpg)
+![Roadmap](roadmap.jpg)
 
 ## Getting started
 
