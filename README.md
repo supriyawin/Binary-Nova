@@ -14,7 +14,7 @@ Automation tool that virtualizes the waiting Queue At medical centers, Labs and 
 1. [Getting started with WellnessQ](#getting-started)
 1. [Running the tests](#running-the-WellnessQ-app)
 1. [Live demo](#live-demo)
-1. [Future works](#Future works)
+1. [Future works](#Future-works)
 1. [Built with](#built-with)
 1. [Authors](#authors)
 
@@ -35,7 +35,7 @@ We can automate the queue into virtual one so that the patient does not have to 
 
 ### The Idea: Solution
 
-WellneQ Android application automates queues into virtual queue so that the patient does not have to stay anxious for his/her turn for long. The Patient can see his token number on his/her phone which gets updated on real time. Once his/her turn come, he also gets push notifications that his turn has come. This saves his time , he/she can avoid waiting in long queue, and he/she can maintain safe distance from other patients who are there. Once his test is done , and we found him negative for Covid, we will issue certificate to that patient, which the patient can see on his phone, download that, and use that as a pass during travel
+WellnessQ Android application automates queues into virtual queue so that the patient does not have to stay anxious for his/her turn for long. The Patient can see his token number on his/her phone which gets updated on real time. Once his/her turn come, he also gets push notifications that his turn has come. This saves his time , he/she can avoid waiting in long queue, and he/she can maintain safe distance from other patients who are there. Once his test is done , and we found him negative for Covid, we will issue certificate to that patient, which the patient can see on his phone, download that, and use that as a pass during travel
 
 Apart from the Covid-19 patients, it can also help the other category of health departments, which will facilitate patients to save time and stay safe while maintaining safe social distancing
 
