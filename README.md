@@ -195,7 +195,7 @@ applications:
 
 ### And Cloud foundry application deployment
 
-[how to deploy your application to cloud fooundry](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
+[how to deploy your application to cloud foundry](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
 
 
 Keep your deployable jar and manifest.yml file in the same folder and open cammand prompt from that file location. Run following two commands to deploy your application.
