@@ -168,7 +168,7 @@ import project
 
 ## Running the tests
 
-Download the WellnessQ App ![WellnessQ.apk](https://github.com/supriyawin/Binary-Nova/blob/master/WellnessQ%20APK/app-debug.apk) in your android mobile phone and run the application.
+Download the WellnessQ App ![WellnessQ.apk](https://github.com/supriyawin/Binary-Nova/tree/master/WellnessQ%20APK) in your android mobile phone and run the application.
  
 View and test REST APIs associated [Swagger UI](http://wellnessq.mybluemix.net/swagger-ui.html)
 
@@ -217,16 +217,16 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 
    'WellnessQ Will be useful even after pandemic'
 
-3. We can also customized this virtual Queue application. This solution is useful in every industrial sector where the supply of services is limited as per the demand of  getting the services
+3. We can also customize this virtual Queue application. This solution is useful in every industrial sector where the supply of services is limited as per the demand of  getting the services
 
 
 
 ## Built with
 
-* [IBM Cloudfoundry](https://cloud.ibm.com/catalog?search=cloudant#search_results) - Application deployed in IBM Cloud foundry Application
+* [IBM Cloud foundry](https://cloud.ibm.com/catalog?search=cloudant#search_results) - Application deployed in IBM Cloud foundry Application
 * [IBM Push Notifications](https://cloud.ibm.com/catalog/services/push-notifications) - Ability to personalize and send notifications
 * [MongoDB Atlas](https://www.mongodb.com/world?tck=cloud_login) - The NoSQL database used
-* [Java STS](https://spring.io/tools) - The IDE used for backed development
+* [Java STS](https://spring.io/tools) - The IDE used for backend development
 * [Maven](https://maven.apache.org/) - Dependency management
 * [Android Studio](https://developer.android.com/studio) - The IDE used for andriod development
 * [Swagger ui](https://swagger.io/) - Enabled -To view REST APIs
@@ -235,6 +235,6 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 
 ## Authors
 
-* **Ananya Stitipragyan** - *Java Spring-boot Backend, MongoDB, Demo Video and Document work*
-* **Supriya Sinha** - *Android, Spring-boot, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment, MongoDB* 
+* [**Ananya Stitipragyan**](https://www.linkedin.com/in/ananya-stitipragyan-44238b9b) - *Java Spring-boot Backend, MongoDB, Demo Video and Document work*
+* [**Supriya Sinha**](https://www.linkedin.com/in/supriya-sinha-8a215baa) - *Android, Spring-boot, front-end development, integration, push notification, phone authentication, and google Map integration , Map deployment, MongoDB* 
 
