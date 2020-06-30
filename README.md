@@ -62,7 +62,7 @@ Apart from the Covid-19 patients, it can also help the other category of health 
 
 ## Demo video
 
-[![DemoCover](demo.jpg)](https://youtu.be/bhxssywl8yA)
+[![DemoCover](demo.jpg)](https://youtu.be/NnZ8nnpuS00)
 
 ## The architecture
 
