@@ -216,8 +216,10 @@ You can find a running system to test at [wellnessq.mybluemix.net](http://wellne
 2. Another feature to this application is collection of test reports as a certificate of confirmation  after every lab testso that Patient won’t have to wait for lab results 
 
    'WellnessQ Will be useful even after pandemic'
+   
+3. Watson asistant bot will be there to address the queries regarding COVID-19. Watson assistant will be integrated with watson discovery as covid-19 search skils
 
-3. We can also customize this virtual Queue application. This solution is useful in every industrial sector where the supply of services is limited as per the demand of  getting the services
+4. We can also customize this virtual Queue application. This solution is useful in every industrial sector where the supply of services is limited as per the demand of  getting the services
 
 
 
